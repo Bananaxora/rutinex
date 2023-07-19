@@ -13,7 +13,7 @@ const BarraBusqueda = ({ searchTerm, handleSearch, handleReset, handleFilter }) 
       <input
         className="form-control form-control-lg"
         type="text"
-        placeholder="Buscar ejercicios por categoría o título..."
+        placeholder="Busqueda + Enter para filtrar búsqueda"
         value={searchTerm}
         onChange={handleSearch}
         onKeyDown={handleKeyPress}

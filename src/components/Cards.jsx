@@ -6,7 +6,7 @@ const Cards = ({ data, handleOpenModal }) => {
       {data.map((item) => (
         <div key={item.id} className="col mb-3">
           <div className="card text-bg-dark h-100">
-            <img src={item.imagen} className="card-img-top" alt={item.titulo} />
+            <img src='https://periodicoeldia.mx/wp-content/uploads/2022/05/gym-durango.jpeg' className="card-img-top" alt={item.titulo} />
             <div className="card-body">
               <h5 className="card-title">{item.titulo}</h5>
               <p className="card-text fs-6 fw-normal">
@@ -14,9 +14,6 @@ const Cards = ({ data, handleOpenModal }) => {
               </p>
               <p className="card-text fs-6 fw-normal">
                 <span className="fw-semibold">Dificultad:</span> {item.dificultad}
-              </p>
-              <p className="card-text fs-6 fw-normal">
-                <span className="fw-semibold">Objetivo:</span> {item.objetivo}
               </p>
               <p className="card-text fs-6 fw-normal">
                 <span className="fw-semibold">Duración:</span> {item.duracion}
