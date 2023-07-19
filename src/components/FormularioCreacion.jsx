@@ -28,7 +28,6 @@ const FormularioCreacion = ({ agregarTarjeta, cerrarFormulario }) => {
 
     agregarTarjeta(nuevaTarjeta);
 
-    // Restablecer los valores del formulario
     setImagen('');
     setTitulo('');
     setDescripcion('');
@@ -43,7 +42,7 @@ const FormularioCreacion = ({ agregarTarjeta, cerrarFormulario }) => {
     <div className="modal fade show" tabIndex="-1" role="dialog" style={{ display: 'block' }}>
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content border-warning text-bg-dark">
-          <div className="modal-header">
+          <div className="modal-header" data-bs-theme="dark">
             <h5 className="modal-title">Agregar Rutina</h5>
             <button type="button" className="btn-close" onClick={cerrarFormulario} />
           </div>

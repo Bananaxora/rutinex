@@ -5,7 +5,7 @@ const ModalDetalle = ({ item, closeModal }) => {
     <div className="modal fade show" tabIndex="-1" role="dialog" style={{ display: 'block' }}>
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content border-warning text-bg-dark">
-          <div className="modal-header">
+          <div className="modal-header" data-bs-theme="dark">
             <p className="modal-title fs-1 fst-italic">{item.titulo}</p>
             <button type="button" className="btn-close" onClick={closeModal} />
           </div>
